@@ -3,7 +3,7 @@ sketch-devtools-console
 
 A companion CocoaScript framework for Sketch DevTools Console module.
 
-> *Note:* This framework is a part of [Sketch DevTools]() project. Since this project is not released yet this framework is totally useless at the moment. Work in progress! :)
+> *Note:* This framework is a part of [Sketch DevTools](http://github.com/turbobabr/sketch-devtools) project. Since this project is not released yet this framework is totally useless at the moment. Work in progress! :)
 
 ## Installation
 
