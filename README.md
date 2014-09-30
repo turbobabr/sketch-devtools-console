@@ -34,7 +34,7 @@ console.clear();
 
 ### console.count(label)
 
-Writes the the number of times that `count()` has been invoked at the same line and with the same label.
+Writes the number of times that `count()` has been invoked with the same label.
 
 ```JavaScript
 function processLayer(layer) {
@@ -50,6 +50,25 @@ TODO: Text goes here!
 ### console.indent(times)
 
 TODO: Text goes here!
+
+Sample:
+
+```JavaScript
+console.indent(1);
+console.log("ROOT NODE");
+console.indent(2);
+console.log("Node A");
+console.log("Node B");
+console.indent(2);
+console.log("Subnode 1");
+console.log("Subnode 2");
+console.log("Subnode 3");
+console.unindent(2);
+console.log("Node B");
+console.unindent(0);
+
+console.log("We'are done!");
+```
 
 ### console.unindent(times)
 
@@ -130,9 +149,14 @@ Stops the timer with the specified label and prints the elapsed time.
 
 TODO: Text goes here!
 
-### console.assert(condition,obj)
+### console.assert(expression,obj)
 
-TODO: Text goes here!
+If the specified expression is `false`, the message is written to the console. In the following example, the assert message is written to the console only when the current page contains more than 50 child layers:
+
+```JavaScript
+var children=doc.currentPage().children();
+console.assert(children.count()<50,"I can't handle more than 50 layers! :)");
+```
 
 ### console.header(title,size)
 
