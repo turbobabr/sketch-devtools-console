@@ -3,6 +3,8 @@ sketch-devtools-console
 
 A companion CocoaScript framework for Sketch DevTools Console module.
 
+> *Note:* This framework is a part of [Sketch DevTools]() project. Since this project is not released yet this framework is totally useless at the moment. Work in progress! :)
+
 ## Installation
 
 TODO: Text goes here!
@@ -13,6 +15,10 @@ TODO: Text goes here!
 #import 'cocoascript_modules/console.js'
 console.log("Hi Handsome! :)");
 ```
+
+## Changelog
+
+TODO: Text goes here!
 
 ## Console API Reference
 
@@ -113,3 +119,17 @@ TODO: Text goes here!
 ### console.mixin(name,fn)
 
 TODO: Text goes here!
+
+## Contacts
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2014 Andrey Shakhmin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
