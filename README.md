@@ -20,11 +20,22 @@ TODO: Text goes here!
 
 ### console.clear()
 
-TODO: Text goes here!
+Clears the console.
+
+```JavaScript
+console.clear();
+```
 
 ### console.count(label)
 
-TODO: Text goes here!
+Writes the the number of times that `count()` has been invoked at the same line and with the same label.
+
+```JavaScript
+function processLayer(layer) {
+    console.count("processLayer called");
+    // processLayer() code...
+}
+```
 
 ### console.log(object [, object, ...])
 
@@ -48,11 +59,22 @@ TODO: Text goes here!
 
 ### console.time(label)
 
-TODO: Text goes here!
+Starts a new timer with an associated label. When `console.timeEnd()` is called with the same label, the timer is stopped the elapsed time displayed in the Console. Timer values are in milliseconds.
+
+console.time("Array initialize");
+
+var data=[100000];
+for(var i=0;i<100000;i++) {
+    data[i]=new Object();
+}
+
+console.timeEnd("Array initialize");
+
+TODO: Add sample image.
 
 ### console.timeEnd()
 
-TODO: Text goes here!
+Stops the timer with the specified label and prints the elapsed time.
 
 ### console.tag(tag,str,level)
 
