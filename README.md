@@ -61,6 +61,7 @@ TODO: Text goes here!
 
 Starts a new timer with an associated label. When `console.timeEnd()` is called with the same label, the timer is stopped the elapsed time displayed in the Console. Timer values are in milliseconds.
 
+```JavaScript
 console.time("Array initialize");
 
 var data=[100000];
@@ -69,6 +70,7 @@ for(var i=0;i<100000;i++) {
 }
 
 console.timeEnd("Array initialize");
+```
 
 TODO: Add sample image.
 
