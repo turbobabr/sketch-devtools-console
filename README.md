@@ -59,6 +59,48 @@ TODO: Text goes here!
 
 TODO: Text goes here!
 
+Sample:
+
+```JavaScript
+var layer=selection.firstObject();
+if(layer) {
+    var frame=layer.frame();
+    console.group("Layer Frame:");
+    console.log("x: "+frame.x());
+    console.log("y: "+frame.y());
+    console.log("width: "+frame.width());
+    console.log("height: "+frame.height());
+    console.groupEnd();
+}
+```
+
+Nested groups sample:
+
+```JavaScript
+var layer=selection.firstObject();
+if(layer) {
+    var frame=layer.frame();
+
+    console.group("Layer Info:");
+    console.log("name: "+layer.name());
+    console.log("type: "+layer.className());
+
+    console.group("Frame:");
+    console.log("x: "+frame.x());
+    console.log("y: "+frame.y());
+    console.log("width: "+frame.width());
+    console.log("height: "+frame.height());
+    console.groupEnd();
+
+    console.group("Fill:");
+    console.log("color: #"+layer.style().fill().color().hexValue());
+    console.log("fillType: "+layer.style().fill().fillType());
+    console.groupEnd();
+
+    console.log("We're done!");
+}
+```
+
 ### console.groupEnd()
 
 TODO: Text goes here!
@@ -103,6 +145,42 @@ TODO: Text goes here!
 ### console.className(label,obj)
 
 TODO: Text goes here!
+
+Basic sample:
+
+```JavaScript
+var layer=selection.firstObject();
+if(layer) {
+
+    console.className(layer);
+    console.className("Selected layer class: ",layer);
+    console.className(layer.style().fill());
+    console.className(selection);
+
+    console.className([1,2,3,4,5]);
+    console.className({
+        type: "log",
+        value: "Sample Log"
+    });
+    console.className("Yo!");
+    console.className(function(){ print("Yo!"); });
+}
+```
+
+Custom coloring:
+
+```JavaScript
+var layer=selection.firstObject();
+if(layer) {
+
+    console.className(layer,"default");
+    console.className(layer,"primary");
+    console.className(layer,"success");
+    console.className(layer,"warning");
+    console.className(layer,"info");
+    console.className(layer,"danger");
+}
+```
 
 ### console.logImage(image)
 
